@@ -8,7 +8,7 @@ import com.example.mvp4beginners.R
 
 class LoginActivity : AppCompatActivity(), LoginContract.View {
     //late init variables
-    private lateinit var buttonOk: Button
+    private lateinit var btnOk: Button
     private lateinit var edtLogin: EditText
     private lateinit var edtPassword: EditText
     private lateinit var loading: FrameLayout
@@ -21,14 +21,14 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        buttonOk = findViewById(R.id.buttonOk)
+        btnOk = findViewById(R.id.btnOk)
         edtLogin = findViewById(R.id.edtLogin)
         edtPassword = findViewById(R.id.edtPassword)
         loading = findViewById(R.id.loading)
 
         presenter.view = this
 
-        buttonOk.setOnClickListener {
+        btnOk.setOnClickListener {
             val login = edtLogin.text.toString()
             val password = edtPassword.text.toString()
 
