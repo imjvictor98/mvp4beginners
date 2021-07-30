@@ -10,6 +10,8 @@ interface LoginContract {
         fun showError(message: String)
         //Login
         fun login()
+
+        fun forgotPassword()
     }
 
     interface Presenter {
@@ -19,5 +21,7 @@ interface LoginContract {
         fun checkPassword(password: String): Boolean
         //Do login (showToast)
         fun login(login: String, password: String)
+
+        fun doForgotPassword(email: String)
     }
 }

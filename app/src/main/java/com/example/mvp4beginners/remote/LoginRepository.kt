@@ -6,4 +6,9 @@ interface LoginRepository {
         password: String,
         isSuccessful: () -> Unit,
         isFailure: (String) -> Unit)
+
+    fun forgotPassword(
+        login: String,
+        isSuccessful: () -> Unit,
+        isFailure: (String) -> Unit)
 }
