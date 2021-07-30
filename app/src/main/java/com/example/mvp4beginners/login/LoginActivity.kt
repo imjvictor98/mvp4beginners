@@ -16,6 +16,7 @@ class LoginActivity : AppCompatActivity(), LoginContract.View {
     //presenter
     private val presenter = LoginPresenter()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
