@@ -37,4 +37,15 @@ class LoginPresenter: LoginContract.Presenter {
 
         repository.login(login, password, successfulCallback, failureCallback)
     }
+
+    override fun doForgotPassword(email: String) {
+        val successfulCallback: () -> Unit = {
+            view.forgotPassword()
+        }
+
+        val failureCallback: (String) -> Unit = { message ->
+            Unit
+        }
+        repository.forgotPassword(email, successfulCallback, failureCallback)
+    }
 }

@@ -9,6 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MVP4Beginners">
+        <activity
+            android:name=".forgot.ForgotPasswordActivity"
+            android:exported="true"
+            android:label="@string/title_activity_forgot_password"
+            android:theme="@style/Theme.MVP4Beginners.NoActionBar" />
         <activity android:name=".login.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
